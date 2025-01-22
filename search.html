@@ -1,0 +1,23 @@
+<input placeholder="検索ワードを入力" id="search-input" type="text" class="validate">
+<div class="center-align">
+  <a class="waves-effect waves-light btn" id="search-button">
+    <i class="material-icons left">search</i>検索
+  </a>
+</div>
+
+<!-- スクリプト部分 -->
+<script>
+  document.getElementById('search-button').addEventListener('click', function () {
+    // 入力欄の値を取得
+    const query = document.getElementById('search-input').value.trim();
+
+    // 入力が空でなければサイト内検索のURLにリダイレクト
+    if (query) {
+      const siteUrl = "sach-0719.github.io/sach-world";
+      const searchUrl = `https://www.google.com/search?q=site:${siteUrl}+${encodeURIComponent(query)}`;
+      window.location.href = searchUrl;
+    } else {
+      alert('検索ワードを入力してください。');
+    }
+  });
+</script>
