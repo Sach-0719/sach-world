@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja-jp">
 <head>
-  <meta name="google-site-verification" content="-JBVtCA3HaLl30qs1_nBVGH69zV5XBSoxILqmfglKX4" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Scratchアニメチャンネル - HOME</title>
@@ -10,7 +9,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 </head>
 
 <body>
@@ -38,9 +36,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2"><font color="white">検索</font></h1>
+        <h1 class="header center teal-text text-lighten-2">検索</h1>
         <div class="row center">
-          <h5 class="header col s12 light">探したいものがあればここから検索します。</h5>
+          <h5 class="header center teal-text text-lighten-2">検索はまだあまり動作しません。ご了承ください。</h5>
         </div>
         <div class="row center">
       
@@ -49,7 +47,6 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="datachef_unicolor.png" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -61,30 +58,30 @@
     </div>
   </div>
 
-  <input placeholder="検索ワードを入力" id="search-input" type="text" class="validate">
-  <div class="center-align">
-    <a class="waves-effect waves-light btn" id="search-button">
-      <i class="material-icons left">search</i>検索
-    </a>
-  </div>
-  
-  <!-- スクリプト部分 -->
-  <script>
-    document.getElementById('search-button').addEventListener('click', function () {
-      // 入力欄の値を取得
-      const query = document.getElementById('search-input').value.trim();
-  
-      // 入力が空でなければサイト内検索のURLにリダイレクト
-      if (query) {
-        const siteUrl = "sach-0719.github.io/sach-world";
-        const searchUrl = `https://www.google.com/search?q=site:${siteUrl}+${encodeURIComponent(query)}`;
-        window.location.href = searchUrl;
-      } else {
-        alert('検索ワードを入力してください。');
-      }
-    });
-  </script>
-  
+<input placeholder="検索ワードを入力" id="search-input" type="text" class="validate">
+<div class="center-align">
+  <a class="waves-effect waves-light btn" id="search-button">
+    <i class="material-icons left">search</i>検索
+  </a>
+</div>
+
+<!-- スクリプト部分 -->
+<script>
+  document.getElementById('search-button').addEventListener('click', function () {
+    // 入力欄の値を取得
+    const query = document.getElementById('search-input').value.trim();
+
+    // 入力が空でなければサイト内検索のURLにリダイレクト
+    if (query) {
+      const siteUrl = "sach-0719.github.io/sach-world";
+      const searchUrl = `https://www.google.com/search?q=site:${siteUrl}+${encodeURIComponent(query)}`;
+      window.location.href = searchUrl;
+    } else {
+      alert('検索ワードを入力してください。');
+    }
+  });
+</script>
+
   
   
 
@@ -158,13 +155,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/script.js"></script>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems);
-  });
-</script>
-
 
   <!--ジャンプボタン-->
   <div class="fixed-action-btn">
