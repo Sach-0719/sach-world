@@ -57,3 +57,8 @@ footer.page-footer {
 }
 
 .hoge { text-align: center; }
+
+.parallax-container {
+  height: 500px; /* 必要に応じて調整 */
+}
+
