@@ -157,6 +157,13 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+</script>
+
 
   <!--ジャンプボタン-->
   <div class="fixed-action-btn">
