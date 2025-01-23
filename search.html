@@ -3,14 +3,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Scratchアニメチャンネル - HOME</title>
+  <title>Scratchアニメチャンネル - コンテンツ</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -38,9 +37,9 @@
       <div class="container">
         <br><br>
         <div class="center-horizontal">
-        <h1 class="header center teal-text text-lighten-2">検索</h1>
+        <h1 class="header center pink-text text-darken-2">検索</h1>
         <div class="row center">
-          <h5 class="header center teal-text text-lighten-2">検索はまだあまり動作しません。ご了承ください。</h5>
+          <h5 class="header center pink-text text-darken-2">探したいものがあればここから入力してください。</h5>
         </div>
         </div>
         <div class="row center">
@@ -52,41 +51,11 @@
     </div>
   </div>
 
+  <script async src="https://cse.google.com/cse.js?cx=c2a14d194aa9c424c">
+  </script>
+  <div class="gcse-searchbox"></div>
+  <div class="gcse-searchresults"></div>
 
-  <div class="container">
-    <div class="section">
-
-
-
-    </div>
-  </div>
-
-<input placeholder="検索ワードを入力" id="search-input" type="text" class="validate">
-<div class="center-align">
-  <a class="waves-effect waves-light btn" id="search-button">
-    <i class="material-icons left">search</i>検索
-  </a>
-</div>
-
-<!-- スクリプト部分 -->
-<script>
-  document.getElementById('search-button').addEventListener('click', function () {
-    // 入力欄の値を取得
-    const query = document.getElementById('search-input').value.trim();
-
-    // 入力が空でなければサイト内検索のURLにリダイレクト
-    if (query) {
-      const siteUrl = "sach-0719.github.io/sach-world";
-      const searchUrl = `https://www.google.com/search?q=site:${siteUrl}+${encodeURIComponent(query)}`;
-      window.location.href = searchUrl;
-    } else {
-      alert('検索ワードを入力してください。');
-    }
-  });
-</script>
-
-  
-  
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -111,6 +80,7 @@
         </div>
       </div>
       <a class="waves-effect waves-light btn" href="contact.html"><i class="material-icons left">mail</i>お問い合わせページへ</a>
+
     </div>
   </div>
 
@@ -126,7 +96,7 @@
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer pink">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -135,7 +105,8 @@
 
 
         </div>
-        <div class="col l3 s12">
+        </div>
+        <div class=" l3 s12">
           <h5 class="white-text">各種アカウント</h5>
           <ul>
             <li><a class="white-text" href="https://www.youtube.com/channel/UC9wJaVOrAiEsncCA5kMI0Nw">YouTubeチャンネル</a></li>
@@ -153,15 +124,18 @@
   </footer>
 
 
+  
+
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/script.js"></script>
+    <!--ジャンプボタン-->
+      <!--ジャンプボタン-->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large pink" href="#">
+          <img src="arrow_upward_24dp_E8EAED(2).svg" alt="㊤">
 
-  <!--ジャンプボタン-->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large pink " href="#">
-      <img src="arrow_upward_24dp_E8EAED(2).svg" alt="㊤">
   </body>
 </html>
