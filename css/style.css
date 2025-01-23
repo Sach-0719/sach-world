@@ -6,188 +6,189 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
-p {
-  line-height: 2rem;
-}
-
-.sidenav-trigger {
-  color: #c2185b;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-.hoge { text-align: center; }
-/* ナビゲーションバーの背景を白に設定 */
-nav {
-  background-color: #c2185b;
-}
-
-/* ナビゲーションバーの文字とアイコンをピンクダークン2に設定 */
-nav .brand-logo,
-nav ul li a,
-nav .sidenav-trigger i {
-  color: #c2185b; /* ピンクダークン2 */
-}
-
-/* サイドナビゲーションのリンク色もピンクダークン2に設定 */
-.sidenav a {
-  color: #c2185b;
-}
-/* === ナビゲーションバー === */
-nav {
-  background-color: #c2185b; /* 背景を白に設定 */
-}
-nav .brand-logo,
-nav ul li a,
-nav .sidenav-trigger i {
-  color: #c2185b; /* ピンクダークン2 */
-}
-
-/* === サイドナビゲーション === */
-.sidenav {
-  background-color: c2185b; /* 背景を白に統一 */
-}
-.sidenav a {
-  color: #c2185b; /* リンクをピンクダークン2 */
-}
-
-/* === ボタン === */
-.btn {
-  background-color: #c2185b !important; /* ボタン背景色 */
-  color: white !important; /* ボタンのテキストを白に */
-}
-.btn:hover {
-  background-color: #d81b60 !important; /* ホバー時の色を少し明るく */
-}
-
-/* === テキストカラー === */
-.text-accent {
-  color: #c2185b; /* ピンクダークン2 */
-}
-
-/* === リンクカラー === */
-a {
-  color: #c2185b; /* リンクの通常色 */
-}
-a:hover {
-  color: #d81b60; /* ホバー時の色 */
-}
-
-/* === フォーム要素のアクセント === */
-input[type="text"]:focus,
-textarea:focus {
-  border-bottom: 2px solid #c2185b !important; /* 入力中のボーダー色 */
-  box-shadow: 0 1px 0 0 #c2185b !important; /* 入力中の影 */
-}
-input[type="submit"] {
-  background-color: #c2185b; /* 送信ボタンの背景色 */
-  color: white;
-}
-nav {
-  position: fixed; /* ヘッダーを画面上部に固定 */
-  top: 0; /* 上端に配置 */
-  left: 0; /* 左端に配置 */
-  width: 100%; /* ヘッダーが画面幅全体に広がるよう設定 */
-  z-index: 1000; /* ヘッダーが他の要素の上に表示されるように設定 */
-  background-color: white; /* 背景色（必要に応じて変更可能） */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を付ける（任意） */
-}
-
-/* デフォルトのヘッダー設定 */
-nav .brand-logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translateX(0);
-}
-
-/* PC表示の場合 */
-@media screen and (min-width: 601px) {
-  nav {
-    height: 64px; /* ヘッダーの高さを設定 */
-  }
-
-  nav .brand-logo {
-    display: flex; /* ロゴとテキストを横並びにする */
-    align-items: center; /* ロゴとテキストを縦方向で中央揃え */
-    justify-content: flex-start; /* 左端に配置 */
-    height: 100%; /* 高さを100%に設定 */
-    padding-left: 20px; /* 左側に少し余白を追加 */
-  }
-
-  nav .brand-logo img {
-    max-width: 200px; /* ロゴのサイズ調整 */
-    height: auto; /* アスペクト比を維持 */
-    margin-right: 10px; /* ロゴとテキストの間隔 */
-  }
-
-  nav .brand-logo span {
-    font-size: 1.5rem; /* テキストのフォントサイズ調整 */
-    font-weight: bold; /* テキストを太字に */
-  }
-}
-
-/* モバイル表示の場合の設定 */
-@media screen and (max-width: 600px) {
-  nav .brand-logo {
-    position: absolute;
-    left: 50%;
-    top: 60%; /* ロゴの位置を60%に設定 */
-    transform: translate(-50%, -50%); /* 中央揃え */
-    text-align: center;
-  }
-
-  nav .brand-logo img {
-    max-width: 250px; /* ロゴのサイズを調整 */
-    height: auto; /* アスペクト比を維持 */
-  }
-
-  nav .brand-logo span {
-    display: none; /* モバイル表示時にテキストを非表示 */
-  }
-
-  .sidenav-trigger {
-    right: 10px;
-    position: absolute;
-  }
-}
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #c2185b;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 694px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
+ .hoge { text-align: center; }
+ /* ナビゲーションバーの背景を白に設定 */
+ nav {
+   background-color: #c2185b;
+ }
+ 
+ /* ナビゲーションバーの文字とアイコンをピンクダークン2に設定 */
+ nav .brand-logo,
+ nav ul li a,
+ nav .sidenav-trigger i {
+   color: #c2185b; /* ピンクダークン2 */
+ }
+ 
+ /* サイドナビゲーションのリンク色もピンクダークン2に設定 */
+ .sidenav a {
+   color: #c2185b;
+ }
+ /* === ナビゲーションバー === */
+ nav {
+   background-color: #c2185b; /* 背景を白に設定 */
+ }
+ nav .brand-logo,
+ nav ul li a,
+ nav .sidenav-trigger i {
+   color: #c2185b; /* ピンクダークン2 */
+ }
+ 
+ /* === サイドナビゲーション === */
+ .sidenav {
+   background-color: c2185b; /* 背景を白に統一 */
+ }
+ .sidenav a {
+   color: #c2185b; /* リンクをピンクダークン2 */
+ }
+ 
+ /* === ボタン === */
+ .btn {
+   background-color: #c2185b !important; /* ボタン背景色 */
+   color: white !important; /* ボタンのテキストを白に */
+ }
+ .btn:hover {
+   background-color: #d81b60 !important; /* ホバー時の色を少し明るく */
+ }
+ 
+ /* === テキストカラー === */
+ .text-accent {
+   color: #c2185b; /* ピンクダークン2 */
+ }
+ 
+ /* === リンクカラー === */
+ a {
+   color: #c2185b; /* リンクの通常色 */
+ }
+ a:hover {
+   color: #d81b60; /* ホバー時の色 */
+ }
+ 
+ /* === フォーム要素のアクセント === */
+ input[type="text"]:focus,
+ textarea:focus {
+   border-bottom: 2px solid #c2185b !important; /* 入力中のボーダー色 */
+   box-shadow: 0 1px 0 0 #c2185b !important; /* 入力中の影 */
+ }
+ input[type="submit"] {
+   background-color: #c2185b; /* 送信ボタンの背景色 */
+   color: white;
+ }
+ nav {
+   position: fixed; /* ヘッダーを画面上部に固定 */
+   top: 0; /* 上端に配置 */
+   left: 0; /* 左端に配置 */
+   width: 100%; /* ヘッダーが画面幅全体に広がるよう設定 */
+   z-index: 1000; /* ヘッダーが他の要素の上に表示されるように設定 */
+   background-color: white; /* 背景色（必要に応じて変更可能） */
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を付ける（任意） */
+ }
+ 
+ /* デフォルトのヘッダー設定 */
+ nav .brand-logo {
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translateX(0);
+ }
+ 
+ /* PC表示の場合 */
+ @media screen and (min-width: 695px) {
+   nav {
+     height: 64px; /* ヘッダーの高さを設定 */
+   }
+ 
+   nav .brand-logo {
+     display: flex; /* ロゴとテキストを横並びにする */
+     align-items: center; /* ロゴとテキストを縦方向で中央揃え */
+     justify-content: flex-start; /* 左端に配置 */
+     height: 100%; /* 高さを100%に設定 */
+     padding-left: 20px; /* 左側に少し余白を追加 */
+   }
+ 
+   nav .brand-logo img {
+     max-width: 200px; /* ロゴのサイズ調整 */
+     height: auto; /* アスペクト比を維持 */
+     margin-right: 10px; /* ロゴとテキストの間隔 */
+   }
+ 
+   nav .brand-logo span {
+     font-size: 1.5rem; /* テキストのフォントサイズ調整 */
+     font-weight: bold; /* テキストを太字に */
+   }
+ }
+ 
+ /* モバイル表示の場合の設定 */
+ @media screen and (max-width: 600px) {
+   nav .brand-logo {
+     position: absolute;
+     left: 50%;
+     top: 60%; /* ロゴの位置を60%に設定 */
+     transform: translate(-50%, -50%); /* 中央揃え */
+     text-align: center;
+   }
+ 
+   nav .brand-logo img {
+     max-width: 250px; /* ロゴのサイズを調整 */
+     height: auto; /* アスペクト比を維持 */
+   }
+ 
+   nav .brand-logo span {
+     display: none; /* モバイル表示時にテキストを非表示 */
+   }
+ 
+   .sidenav-trigger {
+     right: 10px;
+     position: absolute;
+   }
+ }
+ 
