@@ -142,7 +142,7 @@
  }
  
  /* PC表示の場合 */
- @media screen and (min-width: 695px) {
+ @media screen and (min-width: 995px) {
    nav {
      height: 64px; /* ヘッダーの高さを設定 */
    }
