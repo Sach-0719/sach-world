@@ -168,7 +168,7 @@
  }
  
  /* モバイル表示の場合の設定 */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 995px) {
    nav .brand-logo {
      position: absolute;
      left: 50%;
