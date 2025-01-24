@@ -207,3 +207,29 @@ dialog.SearchDialog {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に設定 */
 }
+.page-footer {
+  width: 100%;               /* フッターの幅を画面全体に設定 */
+  margin: 0;                 /* デフォルトの余白を削除 */
+  padding: 20px 0;           /* 上下に余白を追加（調整可能） */
+  background-color: #e91e63; /* ピンク色の背景（Materializeのpinkクラスと一致） */
+  color: white;              /* テキストカラーを白に設定 */
+}
+
+.page-footer .container {
+  width: 85%;                /* フッター内のコンテンツ幅を調整 */
+  margin: 0 auto;            /* 中央揃え */
+}
+
+footer ul {
+  list-style-type: none;     /* リストのドットを非表示 */
+  padding: 0;
+}
+
+footer ul li a {
+  color: white;              /* リンクのテキストを白に設定 */
+  text-decoration: none;     /* 下線を削除 */
+}
+
+footer ul li a:hover {
+  text-decoration: underline; /* ホバー時に下線を追加 */
+}
