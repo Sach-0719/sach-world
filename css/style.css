@@ -233,3 +233,66 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline; /* ホバー時に下線を追加 */
 }
+a {
+  font-size: 15px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+a:hover {
+  font-size: 25px;
+}
+/* ホバー時の拡大（.card には適用しない） */
+.fixed-action-btn,
+.btn-floating.btn-large.pink,
+button {
+    transition: transform 0.3s ease-in-out; /* なめらかな変化を適用 */
+}
+
+.fixed-action-btn:hover,
+.btn-floating.btn-large.pink:hover,
+button:hover 
+{
+    transform: scale(1.1); /* ホバー時に10%拡大 */
+}
+/* デフォルトのサイズ */
+input[type="text"],
+textarea {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 入力中（フォーカス時）は拡大 */
+input[type="text"]:focus,
+textarea:focus {
+    transform: scale(1.1);
+}
+
+/* フォーカスを外したら滑らかに縮小 */
+input[type="text"]:not(:focus),
+textarea:not(:focus) {
+    transform: scale(1);
+}
+/* 画像の基本スタイル */
+.toplogo {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* ホバー時に時計回りに一周回転 */
+.toplogo:hover {
+  transform: rotate(360deg);
+}
+
+/* ホバーを外した時に反対回転（逆再生） */
+.toplogo:not(:hover) {
+  transform: rotate(0deg);
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('font/SachMarufont.ttf') format('ttf'),
+       url('font/SachMarufont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SachMarufont', sans-serif;
+}

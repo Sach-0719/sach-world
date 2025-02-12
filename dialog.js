@@ -9,3 +9,12 @@ openDialog.addEventListener('click', () => {
 closeDialog.addEventListener('click', () => {
   dialog.close(); // ダイアログを閉じる
 });
+function formrunMessage() {
+  
+  var result  = confirm("Sach-worldサイトを離れ、Googleフォームのページに移動します。。よろしいですか？");
+
+  if(result){
+    window.open('https://forms.gle/uYL8uoNbJJvch7S47', '_blank')
+  }
+
+  }
