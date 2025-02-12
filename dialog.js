@@ -6,6 +6,11 @@ openDialog.addEventListener('click', () => {
   dialog.showModal(); // モーダルダイアログを開く
 });
 
+vd.addEventListener('click', () => {
+  dialog.showModal(); // モーダルダイアログを開く
+});
+
+
 closeDialog.addEventListener('click', () => {
   dialog.close(); // ダイアログを閉じる
 });
