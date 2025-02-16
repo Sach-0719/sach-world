@@ -189,6 +189,7 @@
    .sidenav-trigger {
      right: 10px;
      position: absolute;
+     color: #c2185b;
    }
  }
  
@@ -233,24 +234,20 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline; /* ホバー時に下線を追加 */
 }
-a{
-  font-size: 15px;
-  transition: font-size 0.5s ease-in-out;
-}
 
-a:hover {
-  font-size: 23px;
-}
 /* ホバー時の拡大（.card には適用しない） */
 .fixed-action-btn,
 .btn-floating.btn-large.pink,
-button {
+button, 
+.card
+{
     transition: transform 0.3s ease-in-out; /* なめらかな変化を適用 */
 }
 
 .fixed-action-btn:hover,
 .btn-floating.btn-large.pink:hover,
-button:hover 
+button:hover, 
+.card:hover
 {
     transform: scale(1.1); /* ホバー時に10%拡大 */
 }
@@ -278,4 +275,17 @@ button:hover
 
 body {
   font-family: 'SachMarufont', sans-serif;
+}
+ .white-bokashi {
+  z-index: index 1;
+  overflow: hidden;
+  background-color: #ffffffe5;/*半透明カラーの色*/  
+}
+/* リンク（a）のホバー時に拡大し、ホバー解除で滑らかに縮小 */
+a {
+  transition: transform 0.5s ease-in-out; /* なめらかな変化を適用 */
+}
+
+a:hover {
+  transform: scale(1.1); /* ホバー時に10%拡大 */
 }
